@@ -3,14 +3,12 @@ from pydantic import Field
 
 
 class Settings(BaseSettings):
-    # Configuración SMTP
-    SMTP_SERVER:  str = Field(default="smtp.gmail.com")
-    SMTP_PORT:    int = Field(default=587)
-    USUARIO:      str
-    APP_PASSWORD: str
-
-    # Configuración del proyecto
-    NOMBRE_HOJA: str = Field(default="Hoja1")
+    TENANT_ID:     str
+    CLIENT_ID:     str
+    CLIENT_SECRET: str
+    USUARIO:       str
+    PASSWORD:      str
+    NOMBRE_HOJA:   str = Field(default="Hoja1")
 
     class Config:
         env_file = ".env"

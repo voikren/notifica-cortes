@@ -24,7 +24,7 @@ class App(tk.Tk):
         # Header
         tk.Label(
             self,
-            text="Notifica Cortes",
+            text="Notificación de Cortes",
             font=("Arial", 16, "bold")
         ).pack(pady=10)
 
@@ -58,10 +58,10 @@ class App(tk.Tk):
         # Botón enviar
         self.btn_enviar = tk.Button(
             self,
-            text="Enviar notificaciones",
+            text="Enviar",
             command=self._iniciar_envio,
             state="disabled",
-            bg="#1F3864",
+            bg="#181919",
             fg="white",
             font=("Arial", 11, "bold"),
             padx=10,
